@@ -61,11 +61,11 @@ namespace StringsAndArrays
 
             // 1.2 Output the numbers array -> hint use Join
             // Expected outcome: 2, 3, 5, 7, 11
-            Console.WriteLine("Outcome: " + string.Join(", ", numbers));
+            Console.WriteLine(string.Join(", ", numbers));
 
             // 1.3 Output the value of the third (3th) item in the numbers array 
             // Expected outcome: 5
-            Console.WriteLine("Outcome: " + numbers[2]);
+            Console.WriteLine(numbers[2]);
 
             // 2. Array Manipulation
             Console.WriteLine("Please enter five names:");
