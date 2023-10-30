@@ -1,4 +1,4 @@
-﻿namespace StringsAndArrays
+namespace StringsAndArrays
 {
     class Program
     {
@@ -61,11 +61,11 @@
 
             // 1.2 Output the numbers array -> hint use Join
             // Expected outcome: 2, 3, 5, 7, 11
-            Console.WriteLine("Expected outcome: " + string.Join(", ", numbers));
+            Console.WriteLine("Outcome: " + string.Join(", ", numbers));
 
             // 1.3 Output the value of the third (3th) item in the numbers array 
             // Expected outcome: 5
-            Console.WriteLine("Expected outcome: " + numbers[2]);
+            Console.WriteLine("Outcome: " + numbers[2]);
 
             // 2. Array Manipulation
             Console.WriteLine("Please enter five names:");
@@ -98,17 +98,14 @@
             // 3.1 Try to find out the searchName from the Task 2 names string array
             //     by finding out it's index.
             //     Assign the index value to new position integer variable
-            int position = Array.IndexOf(names, searchName);
+            int? position = Array.IndexOf(names, searchName);
 
             // 3.2 Check that the index position was found
             //     Hint: What is the result of IndexOf if nothing is found
-            containsWorld = helloWorld.Contains("World");
-            bool nameFound = position != -1;
-
             // 3.2.1 If position is found output the searchName and the found position
-            if (containsWorld)
+            if (position != -1)
             {
-                Console.WriteLine("Found " + searchName + " in the names array at index " + position);
+                Console.WriteLine("Found " + searchName + " in the names array at index " + position.Value);
             }
             else
             {
