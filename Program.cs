@@ -108,7 +108,7 @@
             // 3.2.1 If position is found output the searchName and the found position
             if (containsWorld)
             {
-                Console.WriteLine("Found " + searchName + " in the names array.");
+                Console.WriteLine("Found " + searchName + " in the names array at index " + position);
             }
             else
             {
